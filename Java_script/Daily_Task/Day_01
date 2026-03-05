@@ -1,0 +1,81 @@
+1. What is JavaScript ?
+    JavaScript is a programming language that makes websites interactive. It runs in web browsers and allows pages to respond to user actions like clicks, typing, and animations.
+
+2. What are variables ?
+    A variable is a named container used to store data so you can use or change it later in your program. In JavaScript, we create variables using let, const, or var.
+
+3. Difference between var, let, const?
+    Var = old, function-scoped, can re-declare
+    let = modern, block-scoped, can update
+    const = block-scoped, cannot update, must assign value
+
+4. What is data type?
+    A data type in JavaScript specifies the type of value a variable can hold. It defines how the data is stored, used, and manipulated in a program.
+
+5. Types of primitive data types?
+    1.string
+    2.boolean
+    3.bigint
+    4.symbol
+    5.undefined
+    6.null
+    7.number
+
+6. What are non-primitive data types?
+    1.object {}
+    2.array []
+    3.function(){}
+
+7. What are operator?
+   An operator in JavaScript is a symbol or special character that tells the program to perform a specific operation on one or more values (called operands).
+
+8. Types of operators?
+   1. Arithmetic Operators - (+,-,*,%,/,++,--)
+   2. Assignment Operators - (=, +=, -=, *=, /=)
+   3. Comparison Operators – (==, ===, !=, !==, >, <, >=, <=)
+   4. Logical Operators – (&& (AND), || (OR), ! (NOT))
+   5. Bitwise Operators – (&, |, ^, ~, <<, >>, >>>)
+   6. Ternary Operator – (condition ? valueIfTrue : valueIfFalse)
+   7. Type Operators –(typeof, instanceof)
+
+9. What is expression? 
+    An expression in JavaScript is any piece of code that produces a value. It can be as simple as a number or variable, or more complex like a calculation or function call.
+
+10. What is statement?
+    A statement in JavaScript is a line or block of code that performs an action but does not necessarily produce a value. Statements control the flow of a program, like executing code conditionally, looping, or declaring variables.
+
+11. What is control statement?
+    A control statement in JavaScript is a statement that controls the flow of execution in a program. It decides which code runs, how many times it runs, or under what conditions.
+    1. Conditional Statements – (if, if-else, if-else if-else, switch)
+    2. Looping Statements - (for, while, do-while, for...of, for...in)
+    3. Jump Statements – (break, continue, return, throw)
+
+12. What are conditional statements?
+    Conditional statements in JavaScript are used to execute a block of code only if a specified condition is true. They help the program make decisions based on certain conditions.
+
+13. What are looping statements?
+    Looping statements in JavaScript are used to repeat a block of code multiple times until a specified condition is met. They help automate repetitive tasks and avoid writing the same code again and again.
+    1. For loop
+    2. while loop
+    3. do while
+
+14. What is hoisting?
+    Hoisting is JavaScript’s behavior of moving variable and function declarations to the top of their scope before code execution.
+
+15. What is scope?
+    Scope in JavaScript defines the accessibility or visibility of variables and functions in different parts of the code. It determines where a variable can be used.
+    1. Function scope
+    2. Global scope
+    3. block scope
+
+16. What is closure?
+    A closure is a function that remembers and can access variables from its outer function even after the outer function has finished executing.
+
+
+
+
+   
+
+
+
+

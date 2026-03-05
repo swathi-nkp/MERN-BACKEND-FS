@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <style>
+
+         button {
+            padding: 5px;
+            font-size: 12px;
+            border:none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            background-color:rgb(198, 193, 193);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Task No - 01</h1>
+
+    <h2 id ="counter">0</h2>
+    <button id ="incre">Increase</button>
+    <button id ="decre">Decrease</button>
+    <button id = "reset">Reset</button><br><br><hr>
+
+    <h1>Task No - 02 & 03</h1>
+
+    <input type="text" id ="text">
+    <button id = "input">Enter</button>
+    <button id = "delete">Delete</button>
+    <ul id ="points"></ul><br><br><hr>
+
+    <h1>Task No - 04</h1>
+
+     <form id ="form">
+        <input type="text" id ="fill">
+        <button>submit</button>
+     </form>
+   <strong><p id = "message"></p></strong><br><hr>
+
+    <h1>Task No - 05</h1>
+    <button id ="btn">Click Me!!!</button>
+    <script>
+
+    //  Task 01
+
+        let count = 0
+        
+         const counter = document.getElementById("counter")
+         const increase = document.getElementById("incre")
+         const decrease = document.getElementById("decre")
+         const reset = document.getElementById("reset")
+
+    increase.addEventListener("click",()=>{
+        count++
+        counter.textContent = count;
+    })
+
+    decrease.addEventListener("click",()=>{
+         count--
+         counter.textContent = count;
+    })
+
+    reset.addEventListener("click",()=>{
+        counter.textContent = 0 ;
+    })
+
+    // Task 02
+
+     const text = document.getElementById("text");
+     const input = document.getElementById("input")
+     const points = document.getElementById("points")
+     const remove = document.getElementById("delete")
+
+     input.addEventListener("click",()=>{
+        const li = document.createElement("li")
+        li.textContent = text.value;
+    points.appendChild(li);
+    text.value = "";
+    remove.addEventListener("click",()=>{ // task 03
+         li.remove()
+        
+    })
+})
+ 
+// Task 04
+ 
+     const form = document.getElementById("form")
+     const message = document.getElementById("message")
+     const fill = document.getElementById("fill")
+    
+    form.addEventListener("submit",(e) =>{
+        e.preventDefault();
+           if(fill.value.trim()===""){
+            message.textContent = "Fill the form"
+            message.style.color = "red"
+           }
+
+           else{
+            message.textContent = "login sucessfully"
+            message.style.color = "green"
+           }
+    })
+
+
+// Task 05
+     
+      const btn = document.getElementById("btn")
+      let isdark = false
+
+      btn.addEventListener("click",()=>{
+        if (isdark){
+            document.body.style.backgroundColor = "white"
+            isdark = false
+        }
+        else{
+        document.body.style.backgroundColor = "black"
+        isdark = true
+        }
+      })
+
+    
+
+
+    </script>
+
+</body>
+</html>
