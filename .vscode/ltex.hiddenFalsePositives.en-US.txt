@@ -1,0 +1,4 @@
+{"rule":"FILE_EXTENSIONS_CASE","sentence":"^\\QJS = js is java script its fully have a logics(programming language) jsx = jsx is java script (xml) its look like a html code,used in react only\\E$"}
+{"rule":"FILE_EXTENSIONS_CASE","sentence":"^\\Qwhat is js and jsx?\\E$"}
+{"rule":"BEEN_PART_AGREEMENT","sentence":"^\\Qwhat is react?\\E$"}
+{"rule":"FILE_EXTENSIONS_CASE","sentence":"^\\QReact is a js library use to bulid a user interface.\\E$"}

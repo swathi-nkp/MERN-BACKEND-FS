@@ -1,0 +1,44 @@
+1. what is react?
+
+React is a js library use to bulid a user interface. Especially for single page application(spa).
+It was developed by facebook now its called meta.
+react is mainly for dynamic webpage.
+react is fully component based architecture.
+
+2. what is js and jsx?
+
+JS = js is java script its fully have a logics(programming language)
+jsx = jsx is java script (xml) its look like a html code,used in react only
+
+3. what is main.jsx why we use?
+
+main.jsx is the entry file of a React application.
+It is the file where the React app starts running.
+
+We use it to:
+
+1.Import React
+2.Import the main App component
+3.Connect React to the HTML file
+4.Render the app into the browser
+
+4. what is babel compiler?
+
+Babel is a JavaScript compiler.
+It converts modern JavaScript and JSX code into older JavaScript that browsers can understand.
+
+jsx -> Babel -> js -> run browser
+
+5. what is virtual dom? and real dom?
+
+Real DOM (Document Object Model) is the actual structure of the webpage created by the browser.
+Exists inside browser memory
+Directly updates the screen
+Is slower when many changes happen
+
+Virtual DOM is a lightweight copy of the Real DOM stored in memory.
+React to update the Real DOM efficiently.
+Is not visible to the user
+Compares old and new versions (diffing)
+Updates only changed parts in Real DOM
+Makes apps faster
