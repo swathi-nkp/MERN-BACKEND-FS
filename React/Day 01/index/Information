@@ -42,3 +42,9 @@ Is not visible to the user
 Compares old and new versions (diffing)
 Updates only changed parts in Real DOM
 Makes apps faster
+
+6. what is export default and named exports?
+
+Export default and named exports are used to share components, functions and variable transfer between a file.
+Export default used to transfer the one main component in that file
+Named export used when a file exports multiple components or values.

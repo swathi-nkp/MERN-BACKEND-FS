@@ -1,0 +1,12 @@
+1. what is components?
+
+In react a components is a small reusable piece of UI written in javascript.It returns HTML-like code (JSX) to display on the screen.
+
+2. what is the type for compoanats?
+  1.Funtional components
+  2.class components
+
+3. what is fragment tags?
+
+Fragment tags are used to group multiple elements without adding extra HTML tags to the DOM.
+in return() we only use one tag and the fragment tag is a parent tag.it does't have any behavior.  
