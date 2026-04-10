@@ -1,4 +1,4 @@
-import fs, { readFile } from "fs"
+import fs from "fs"
 
 export const createFile = () =>{
     fs.writeFile("Data.txt","this is my file",(err)=>{
