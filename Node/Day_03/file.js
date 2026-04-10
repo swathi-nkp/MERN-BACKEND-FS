@@ -38,6 +38,3 @@ export const  Removefile = () =>{
     })
 }
 
-export const Createfolder = () =>{
-    fs.mkdir()
-}
