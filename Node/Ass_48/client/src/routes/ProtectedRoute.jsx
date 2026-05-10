@@ -1,8 +1,14 @@
+import { Navigate } from "react-router-dom"
 
 
 const ProtectedRoute = ({children}) => {
 
-     const checktoken = localStorage.getItem("t")
+      const checktoken = localStorage.getItem("jwttoken")
+
+      if(!checktoken){
+        alert("Your not a Valid User Please Login again")
+    return <Navigate to={"/"} />
+      }
 
   return children
 }

@@ -18,18 +18,27 @@ const Login = () => {
      
         e.preventDefault()
 
-        const sendData = await axios.post("http://localhost:5000/api/user/login",formData)
+       try {
+        
+          const sendData = await axios.post("http://localhost:5000/api/user/login",formData)
 
-        if(sendData){
             setformData({useremail:"",password:""})
 
+           localStorage.setItem("jwttoken",sendData.data.token)
 
             alert(sendData.data.msg)
 
         navigate("/dashboard")
         
-            return
-        }
+        
+
+       } catch (error) {
+        
+
+        alert(error.response.data.msg)
+
+        
+       }
 
     
     }

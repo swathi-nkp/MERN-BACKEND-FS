@@ -38,13 +38,15 @@ export const validlogin = async(req,res,next)=>{
 
       if(!checkEmail){
         res.status(404).json({msg:"email incorrect"})
+        return
       }
 
 
-      const checkpassword = bcrypt.compare(password,checkEmail.password)
+      const checkpassword = await bcrypt.compare(password,checkEmail.password)
 
       if(!checkpassword) {
        res.status(404).json({msg:"password incorrect"})
+       return
       }
 
       const token = await jwt.sign({id:checkEmail._id,email:checkEmail.useremail},process.env.JWT_SECURE,{expiresIn:"1h"})
@@ -53,6 +55,8 @@ export const validlogin = async(req,res,next)=>{
   
          res.status(200).json({msg:"token created",token})
 
+     
+        next()
 
     } catch (error) {
 
@@ -60,7 +64,6 @@ export const validlogin = async(req,res,next)=>{
           console.log('error',error);
     }
 
-    next()
 }
 
 export const checktoken = async(req,res,next)=>{
@@ -76,6 +79,8 @@ export const checktoken = async(req,res,next)=>{
         const checkjwt = jwt.verify(token,process.env.JWT_SECURE)
         req.users = checkjwt
 
+        next()
+
     } 
     
 
@@ -86,6 +91,7 @@ export const checktoken = async(req,res,next)=>{
 
 
     }
-    next()
+
+    
 
 }

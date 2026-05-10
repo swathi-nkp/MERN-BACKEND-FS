@@ -7,6 +7,6 @@ const authSchema = new mongoose.Schema({
     password:String
 },{timestamps:true})
 
-const usermodel = mongoose.model("middlewarelogin",authSchema)
+const usermodel = mongoose.model("jwttoken",authSchema)
 
 export default usermodel
